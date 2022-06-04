@@ -1,4 +1,4 @@
-package _02_code_flow._4_flaming_ninja_star;
+package _02_code_flow._4_flaming_ninja_star.copy;
 
 import org.jointheleague.graphical.robot.Robot;
 import java.awt.Color;
