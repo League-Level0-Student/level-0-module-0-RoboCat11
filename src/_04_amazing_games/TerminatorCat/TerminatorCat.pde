@@ -9,20 +9,21 @@
 // This line of code creates a variable to hold your faccate picture
 // You will use it later.
 PImage cat;
-int x=0;
-int y=0;
+int x=210;
+int y=155;
 
 void setup() {
   
 // 2. The code below loads your cat picture into the program. 
 //     Make sure the file name is correct for the cat image you saved earlier
-cat = loadImage("cat.jpg");
+cat = loadImage("Puss in Boots.jpeg");
   
 // 3. Set the size of the sketch. Make it big enough to show the cat you chose.
-
+ size (500,600);
 // 4. Resize the cat so it is the same size as the sketch
-
+cat.resize (500,600);
 // 5. DRAW CAT.    Use the background() command to make the cat the background of the sketch
+ background (cat);
 //    Run the program to see if the cat is drawn. Get this working before you go on.
  
 
@@ -32,6 +33,7 @@ void draw() {
   
 // 6. WHERE IS THE EYE? This code prints the x and y locations of the mouse when you click.
 //    You can use this to find the x and y for the center of the cat's eyes.
+
       if(mousePressed){
           println("Mouse’s x-position: " + mouseX + "\n" + "Mouse’s y-position: " + mouseY + "\n");
       }
@@ -45,13 +47,15 @@ void draw() {
 //     The circles will have black lines around them by default. Put noStroke(); here to remove them.
 
 // 9.  COLOR.  Set the color of your ellipse to the laser color you would like
+ fill(0,232,255);
 //    Remember to use the   fill()  command to set colors.
 
 
 // 10 Use the ellipse() command to draw a circle on the eye (you will have to guess its size). 
 //    Use the x and y variables you just created to place the ellipse in the correct location.
 //                  The ellipse command looks like this:
-                ellipse(x, y, width, height);
+                ellipse(x, y, 75,100);
+                ellipse(x-40,y,75,100);
 // Run the program to make sure it is in the right place and is the right size.
 }
 

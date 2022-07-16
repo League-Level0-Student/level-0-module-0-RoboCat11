@@ -4,7 +4,7 @@
 // 2. Code a size command to make it big enough for your picture
 
 //    The size command looks like this:      
-  size (100,200);
+  size (5000,6000);
 //    Try putting different numbers in the parentheses.
 //    See if you can figure out which number is the width, and which is the height
 
