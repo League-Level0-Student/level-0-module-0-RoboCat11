@@ -45,7 +45,7 @@ void draw() {
 
 // 8. DRAW CIRCLES.
 //     The circles will have black lines around them by default. Put noStroke(); here to remove them.
-
+       noStroke();
 // 9.  COLOR.  Set the color of your ellipse to the laser color you would like
  fill(0,232,255);
 //    Remember to use the   fill()  command to set colors.
@@ -55,7 +55,7 @@ void draw() {
 //    Use the x and y variables you just created to place the ellipse in the correct location.
 //                  The ellipse command looks like this:
                 ellipse(x, y, 75,100);
-                ellipse(x-40,y,75,100);
+                ellipse(x-40,y+200,75,100);
 // Run the program to make sure it is in the right place and is the right size.
 }
 
